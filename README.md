@@ -11,9 +11,8 @@ This project is an automated test suite for the Redmine website. It uses Playwri
 
 ## Steps to Install
 
-<!-- 1. Clone the repository: `git clone <your-repo-url>`
-2. Navigate to the project directory: `cd redmine-test-cases` -->
-
+1. Clone the repository: `git clone https://github.com/medteya/redmine-testcases.git`
+2. Navigate to the project directory: `cd redmine-testcases`
 3. Install dependencies: `npm install`
 
 ## Steps to Launch
