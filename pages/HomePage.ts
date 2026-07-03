@@ -2,23 +2,28 @@ import { Locator, Page } from "@playwright/test";
 
 export class HomePage {
   readonly page: Page;
-  readonly activityLink: Locator;
-  readonly issuesLink: Locator;
-  readonly downloadLink: Locator;
-  readonly searchInput: Locator;
-  readonly searchResults: Locator;
-  readonly searchCount: Locator;
-  readonly searchResultHeader: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.activityLink = page.locator("a.activity");
-    this.issuesLink = page.locator("a.issues");
-    this.downloadLink = page.locator("a.download");
-    this.searchInput = page.locator("#q");
-    this.searchResults = page.locator("#search-results");
-    this.searchCount = page.locator("#search-results-counts");
-    this.searchResultHeader = page.locator("#content h3");
+  }
+
+  get activityLink(): Locator {
+    return this.page.locator("a.activity");
+  }
+  get issuesLink(): Locator {
+    return this.page.locator("a.issues");
+  }
+  get downloadLink(): Locator {
+    return this.page.locator("a.download");
+  }
+  get searchInput(): Locator {
+    return this.page.locator("#q");
+  }
+  get searchResults(): Locator {
+    return this.page.locator("#search-results");
+  }
+  get searchResultHeader(): Locator {
+    return this.page.locator("#content h3");
   }
 
   async goto() {
