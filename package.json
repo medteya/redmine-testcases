@@ -1,0 +1,26 @@
+{
+  "name": "redmine_testcases",
+  "version": "1.0.0",
+  "description": "Automated test suite validating core navigation and search features in Redmine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:headless": "playwright test --headed=false",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "redmine",
+    "automation"
+  ],
+  "author": "Daria Yurchenko",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0"
+  }
+}

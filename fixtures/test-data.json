@@ -1,0 +1,10 @@
+{
+  "search": {
+    "valid": "documentation",
+    "project": "ruby"
+  },
+
+  "projectSearch": {
+    "name": "Redmineup"
+  }
+}
